@@ -1,1 +1,31 @@
 
+package com.company;
+import java.util.Scanner;
+
+public class Main {
+
+
+    public static double computeSideLength(double[] x, double[] y)
+    {
+        double s1,s2,s3;
+        s1 = Math.sqrt(Math.pow(x[0] - x[1], 2) + Math.pow(y[0] - y[1], 2));
+        s2 = Math.sqrt(Math.pow(x[1] - x[2], 2) + Math.pow(y[1] - y[2], 2));
+        s3 = Math.sqrt(Math.pow(x[2] - x[0], 2) + Math.pow(y[2] - y[0], 2));
+        System.out.println("Side 1="+s1+" Side 2="+s2+" Side 3="+s3);
+        return(s1);
+    }
+
+    public static void main(String[] args) {
+	    Scanner scan = new Scanner(System.in);
+	    System.out.println("Enter the vertecies of the triangle x1 y1 x2 y2 x3 y3");
+	    double[] x= new double[3];
+	    double[] y= new double[3];
+	    for (int i=0; i<=2; i++)
+	    {
+	        x[i]=scan.nextInt();
+	        y[i]=scan.nextInt();
+        }
+        computeSideLength(x,y);
+
+    }
+}
