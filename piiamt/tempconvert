@@ -1,0 +1,13 @@
+public class Tempconvert {
+
+    public static double FtoC(double F){
+        double C = (5.0/9.0)*(F-32.0);
+        return C;
+    }
+
+    public static void main (String[] args){
+        System.out.println(FtoC(88.0));
+    }
+
+
+}
