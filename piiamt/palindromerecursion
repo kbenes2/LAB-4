@@ -1,0 +1,25 @@
+//this program I couldn't get to actually work
+
+import java.util.Scanner;
+
+public class PalindromeRecursion {
+
+    public static boolean palindromed(String initial){
+        if (initial.length()==1){
+            return true;
+        }
+        if (initial.substring(0)==initial.substring(-1)){
+            return palindromed(initial.substring(1,-1));
+        }
+        else{
+            return false;
+        }
+    }
+
+    public static void main (String[] args){
+        Scanner reader = new Scanner(System.in);
+        String initial=reader.next();
+        char[] reversed = new char[initial.length()];
+        System.out.println(palindromed(initial));
+    }
+}
