@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+public class factorial {
+
+    public static int fact(int initial){
+        int k;
+        if (initial-1>=1){
+            k = initial*fact(initial-1);
+        }
+        else{
+            k=1;
+        }
+        return k;
+    }
+    public static void main (String[] args){
+        Scanner reader = new Scanner(System.in);
+        int initial=reader.nextInt();
+        System.out.println(fact(initial));
+    }
+
+}
