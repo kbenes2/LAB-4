@@ -1,5 +1,4 @@
 import java.util.Scanner;
-import java.lang.String;
 
 public class Recursive1 {
 
@@ -13,7 +12,7 @@ public class Recursive1 {
 
     private static String Factorial(int Integer)
     {
-        String result ="" + Integer;
+        String result ="" + Integer; //This is the only way I know how to get this to work
         for (int i = Integer; i > 1; i--)
         {
             int nextInteger = i - 1;

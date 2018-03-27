@@ -11,14 +11,14 @@ public class Reverse {
 
     public static String reverse(String input)
     {
-        int Name = input.length();
+        int Name = input.length(); //Want the code to know how long the String is
         char[] reverse = new char[Name];
         int i = 0;
 
         while(i < Name)
         {
             reverse[i] = input.charAt(Name-i-1);
-            i++;
+            i++; //keep going until all characters have been run through
         }
         String output = new String(reverse);
         return output;
