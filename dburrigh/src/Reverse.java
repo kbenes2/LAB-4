@@ -3,8 +3,8 @@ import java.util.Scanner;
 public class Reverse {
     public static void main(String[] args)
     {
-        Scanner sysIn = new Scanner(System.in);
-        String input = sysIn.next();
+        Scanner scan = new Scanner(System.in);
+        String input = scan.next();
         String result = reverse(input);
         System.out.print(result);
     }

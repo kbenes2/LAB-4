@@ -4,8 +4,8 @@ public class Recursive1 {
 
     public static void main(String[] args)
     {
-        Scanner sysIn = new Scanner(System.in);
-        int Integer = sysIn.nextInt();
+        Scanner scan = new Scanner(System.in);
+        int Integer = scan.nextInt();
         String result = Factorial(Integer);
         System.out.print(result);
     }

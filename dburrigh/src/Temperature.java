@@ -3,8 +3,8 @@ import java.util.Scanner;
 public class Temperature {
 
     public static void main(String[] args) {
-        Scanner sysIn = new Scanner(System.in);
-        double F = sysIn.nextDouble();
+        Scanner scan = new Scanner(System.in);
+        double F = scan.nextDouble();
         double result = Convert(F);
         System.out.print(result);
     }

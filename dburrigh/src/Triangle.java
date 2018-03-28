@@ -3,13 +3,13 @@ import java.util.Scanner;
 public class Triangle {
     public static void main(String[] args)
     {
-        Scanner sysIn = new Scanner(System.in);
-        int Ax = sysIn.nextInt(); //I want to input each x and y separately for each vertex
-        int Ay = sysIn.nextInt();
-        int Bx = sysIn.nextInt();
-        int By = sysIn.nextInt();
-        int Cx = sysIn.nextInt();
-        int Cy = sysIn.nextInt();
+        Scanner in = new Scanner(System.in);
+        int Ax = in.nextInt(); //I want to input each x and y separately for each vertex
+        int Ay = in.nextInt();
+        int Bx = in.nextInt();
+        int By = in.nextInt();
+        int Cx = in.nextInt();
+        int Cy = in.nextInt();
         double resultAB = SideAB(Ax,Ay,Bx,By);
         double resultAC = SideAC(Ax,Ay,Cx,Cy);
         double resultBC = SideBC(Bx,By,Cx,Cy);

@@ -1,36 +1,31 @@
 import java.util.Scanner;
+import java.util.List;
 
 public class Sorting {
 
-    public static void main(String[] args)
-    {
-        Scanner sysIn = new Scanner(System.in);
-        String List = sysIn.next();
-        String result = Sort(List);
-        System.out.print(result);
-       // System.out.print(Sort([1, 2, -2, -4, 0, -1]);
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        int Amount; //number of integers
+        int List[] = new int[Amount];
+
+        for (int i = 0; i < Amount; i++)
+        {
+            Amount = scan.nextInt();
+            List[i] = scan.nextInt();
+        }
+        int i = 0;
+        while (i < Amount) {
+            System.out.print(List[i] + ",");
+            i++;
+        }
+        System.out.print(List[Amount - 1]);
     }
 
-    private static String Sort(String List)
+    public static String AscendingOrder(List[] Amount) //I could not get this to work I tried for a while
     {
-        int commandline = List.length();
-        for(int i = 0; i <= commandline; i++)
-        {
-           if(List[i] < List[i+1])
-
-        }
-
-
-    }
-
-    private static int SmallestValue(int[] input)
-    {
-        for(int i = 0; i <= input.length; i++)
-        {
-            if(input[i]<input[i + 1])
-                System.out.print(input[i]);
-            else
-                System.out.print(input[i + 1]);
-        }
+        List[]order;
+        List.sort(Amount);
+        order = Amount;
+        return (List.toString(order));
     }
 }
