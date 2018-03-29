@@ -3,19 +3,21 @@ public class Recursion_2 {
 
     public static int pyramid(int x)
     {
-        if(x == 1) return 1;
         int z = 0;
-        int a = 0;
+        if(x == 1) return 1;
         for(int y = x; y > 0 ; y--)
         {
-            z = z + (y - a);
-            a = a + 1;
+            z += y;
         }
-        return z + pyramid(x-1);
+        int a = z;
+        return a + pyramid(x-1);
     }
 
     public static void main(String[] args)
     {
-
+        Scanner scan = new Scanner(System.in);
+        int x = scan.nextInt();
+        int size = pyramid(x);
+        System.out.println("There are " + size + " cannonballs in this pyramid.");
     }
 }
