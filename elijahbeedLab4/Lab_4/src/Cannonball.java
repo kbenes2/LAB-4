@@ -11,7 +11,7 @@ public class Cannonball {
     }
     public static void main(String[] args)
     {
-        System.out.println("Enter number of rows:");
+        System.out.println("Enter number of layers:");
         Scanner sysIn = new Scanner(System.in);
         int numOfRows = sysIn.nextInt();
         int result = cannonball(numOfRows);
