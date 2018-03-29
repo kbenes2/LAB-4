@@ -1,0 +1,20 @@
+import javax.swing.JOptionPane;
+public class factorial {
+
+	public static void main(String[] args) {
+		String input = JOptionPane.showInputDialog("enter a number");
+		long a = Integer.parseInt(input);
+		System.out.println(calcFactorial(a));
+		
+	}
+	
+	public static long calcFactorial (long a) {
+		if (a==1) {
+			return 1;
+		}
+		else {
+			return a * calcFactorial(a-1);
+		}
+	}
+
+}
