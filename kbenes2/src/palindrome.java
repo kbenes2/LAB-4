@@ -10,6 +10,6 @@ public class palindrome {
         {
             reverse = reverse + number.charAt(i);
         }
-            System.out.print(palindrome(number));
+        System.out.print(number);
     }
 }
