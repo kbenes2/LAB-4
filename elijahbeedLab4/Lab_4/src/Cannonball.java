@@ -1,8 +1,8 @@
 import java.util.Scanner;
 public class Cannonball {
     private static int cannonball(int integerInput) {
-        int numOfBalls = 0;
         int sum = 0;
+        int numOfBalls = 0;
         for (int j = 0; j <= integerInput; j++) {
             sum = sum + numOfBalls*(numOfBalls+1)/2;
             numOfBalls++;
