@@ -1,6 +1,6 @@
 import java.util.Scanner;
 public class Cannonball {
-    private static int cannonBall(int integerInput) {
+    private static int cannonball(int integerInput) {
         int numOfBalls = 0;
         int sum = 0;
         for (int j = 0; j <= integerInput; j++) {
@@ -14,7 +14,7 @@ public class Cannonball {
         System.out.println("Enter number of rows:");
         Scanner sysIn = new Scanner(System.in);
         int numOfRows = sysIn.nextInt();
-        int result = cannonBall(numOfRows);
+        int result = cannonball(numOfRows);
         System.out.println(result);
     }
 }
