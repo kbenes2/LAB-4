@@ -1,0 +1,26 @@
+import java.util.Scanner;
+
+public class recursive2 {
+
+    private static long Cannonballs (int level)
+    {
+        long result = 0;
+        System.out.print(Number of Cannonballs " ");
+        if( number <=1)
+            return 1;
+
+        result = level * (level + 1)/2;          // In this step, we are receiving the number of cannonballs on the level.
+        return result;
+    }
+
+    public static void main(String[] args)
+    {
+        Scanner sysIn = new Scanner(System.in);
+        int level = sysIn.nextInt();
+        long result = Cannonballs(level);
+
+        System.out.println( );
+        System.out.println( result );
+    }
+}
+

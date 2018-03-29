@@ -1,0 +1,19 @@
+public class VerticestoLengths {    
+
+// I have thought about this problem for awhile and I do not know how much of the coding aspect I can put together    
+// Here is how I would plan to code it though:        
+
+// Users would input a set of three integer value vertices for the triangle, i.e. (a,b) (b,c) (a,c)    
+// The program would look at the vertices in pairs; Pair 1: (a,b) (b,c), Pair 2: (b,c) (a,c), Pair 3: (a,c) (a,b)        
+
+// To calculate the side lengths a function would be used in each of the pairs    
+// "SideLength" = sqrt((vertex a)^2 + (vertex b)^2)    
+// NOTE - This "SideLength" would be consolidated into a single function    
+
+// The "SideLength" function would be used on all three pairs    
+// The values would be printed as:    
+// A = (Pair 1 solution)    
+// B = (Pair 2 solution)    
+// C = (Pair 3 solution)    
+
+}

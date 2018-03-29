@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+public class CannonBall {
+
+    public static int balls(int initial){
+        int what;
+        if (initial>1){
+            what=initial+balls(initial-1);
+        }
+        else{
+            what=1;
+        }
+        return what;
+    }
+
+    public static void main (String[] args){
+        Scanner reader = new Scanner(System.in);
+        int initial=reader.nextInt();
+        System.out.println(balls(initial));
+    }
+}

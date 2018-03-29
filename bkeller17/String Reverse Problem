@@ -1,0 +1,22 @@
+import java.util.Scanner;
+
+public class StringReverse {    
+
+public static void main(String[] args)    
+{        
+
+Scanner read = new Scanner(System.in);  // Scanner to search through our string        
+String str = read.nextLine();           // This will look at the following values        
+String reverse = "";                    // This creates a "reverse" value we will fill        
+
+for(int i = str.length() - 1; i >= 0; i--)      // This loop goes until no more characters exist in the loop        
+{            
+
+reverse = reverse + str.charAt(i);          // Current value + the next character        
+
+}        
+
+System.out.println(reverse);            // This gives us our reversed string    
+
+}
+}

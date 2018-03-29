@@ -18,5 +18,14 @@ I would like you to complete what you can prior to next Wednesday's Lecture.
 
 #### Recursion
 
-* Write a program that takes an integer, and prints the factorial of the integer.  ex: 5 factorial is 5*4*3*2*1
-* Write a 
+* Write a program that takes an integer, and prints the factorial of the integer.  ex: 5 factorial is 5 * 4 * 3 * 2 * 1
+* Write a program that will calculate the number of cannon balls in a trinagular pyramid that has the intered integer number of rows.
+(Note: this means that any layer of the pyramid has an equalateral triangle of cannonballs.  The top layer has 1 cannon ball, the one below that has 3, etc.)
+* Use recursion to determin if a string passed in is a palindrome.  Your program will be given a string.
+
+
+#### Dynamic Programing with Memoization
+
+* Modify the cannon ball program to calculate the number of cannon balls in a layer by figureing out the number of cannon balls in a row.  Then add in memoization to help this proces go quicker.  (This is to get you comfortable with the concept with a problem you already have experience with.)
+* Write a program to find the smalest cost to travel from the top of an equalateral triangle to the bottom.  Your program should ask for the number of rows, and then should expect the correct number of numbers to follow that (first line has one number, the next has 2, and it increases by 1 each step.)  This is the problem we talked about on the board.  You may want to look at two deminsional arrays to help with this (but they are nto required.)
+* Write a program that when given a sequence of integers (not nessicarilly positive) will find the maximum sum of a connected segment of them.  Your program will be given a number when it is run to say how many numbers it should pull in to be computing this on.  It will then be given that number of numbers. I strongly suggest working out on paper how you would approach this problem, and then try to see how to shift that approach to small enough steps the computer could do them. Ex:  5    3 -4  2 -1 5      

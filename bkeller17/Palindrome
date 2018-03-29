@@ -1,0 +1,25 @@
+import java.util.Scanner
+
+public class PalindromeCheck {    
+
+public static void main(String[] args)    
+{        
+
+Scanner read = new Scanner(System.in);        
+String str = read.nextline();                   
+String reverse = "";                         
+
+for(int i = str.length() - 1; i >= 0; i--)      
+{            
+
+reverse = reverse + str.charAt(i);                            // This is taking the previous function for reversal
+
+}        
+
+if(input.equals(reverse))                                     // This command simply checks to see if the input = reverse
+  System.out.println(input " is a palindrome.");              // input = racecar; output = racecar is a palindrome. 
+      else
+         System.out.println(input " is not a palindrome.");
+ 
+   }
+}	

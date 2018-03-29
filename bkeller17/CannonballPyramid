@@ -1,0 +1,18 @@
+import java.util.Scanner;
+public class CannonballPyramid {    
+
+int n = "Layers of Cannonballs"
+
+public static long function(int n) { 
+    if (n =
+    
+            // This is where I got confused on setting my recursion up.
+            // With some tinkering and searching around the function to use is:  T(n) = n(n+1)/2 
+            // where n = number of layers desired in the pyramid and T(n) is the total number of cannonballs.
+            // This T(n) would be computed for each layer added together, i.e.
+            // 3 layers = T(1) + T(2) + T(3)
+            
+            // I was hoping to create a function where users would input the number of layers in the pyramid and the result
+            // would be the number of cannonballs. 
+            
+            // I am mostly having trouble with the syntactic side, whereas I think I have a solid grip on the logistical side.
